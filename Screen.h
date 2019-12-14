@@ -1,5 +1,7 @@
 #pragma once
 
+// #include <conio.h> // Colors with _cprintf()
+
 #include <memory>
 #include <string>
 #include <vector>

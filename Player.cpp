@@ -8,8 +8,22 @@ Player::Player(int x, int y, char symbol)
 
 }
 
-void Player::Update(int x, int y)
+void Player::MoveUp()
 {
-	m_x = x;
-	m_y = y;
+	m_y = m_y - 1;
+}
+
+void Player::MoveDown()
+{
+	m_y = m_y + 1;
+}
+
+void Player::MoveLeft()
+{
+	m_x = m_x - 1;
+}
+
+void Player::MoveRight()
+{
+	m_x = m_x + 1;
 }

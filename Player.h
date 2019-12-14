@@ -12,15 +12,18 @@ public:
 	Player(int x, int y, char symbol);
 	~Player() = default;
 public: // Accessors:
-	int GetX() const { return m_x; }
-	void SetX(int x) { m_x = x; }
+	int GetX() const override { return m_x; }
+	void SetX(int x) override { m_x = x; }
 
-	int GetY() const { return m_y; }
-	void SetY(int y) { m_x = y; }
+	int GetY() const override { return m_y; }
+	void SetY(int y) override { m_x = y; }
 
-	int GetSymbol() const { return m_symbol; }
-	void SetSymbol(char symbol) { m_symbol = symbol; }
+	char GetSymbol() const override { return m_symbol; }
+	void SetSymbol(char symbol) override { m_symbol = symbol; }
 
 public:
-	void Update(int x, int y) override;
+	void MoveUp() override;
+	void MoveDown() override;
+	void MoveLeft() override;
+	void MoveRight() override;
 };

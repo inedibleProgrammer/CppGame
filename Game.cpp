@@ -22,62 +22,35 @@ void Game::Start()
 	}
 }
 
-void Game::HandleUserInput()
-{
-	char userInput = m_user.GetUserInput();
-	switch (userInput)
-	{
-	case 'w':
-		m_user.ResetInput();
-		break;
-	case 'a':
-		m_user.ResetInput();
-		break;
-	case 's':
-		m_user.ResetInput();
-		break;
-	case 'd':
-		m_user.ResetInput();
-		break;
-	case 't':
-		m_finished = true;
-		break;
-	default:
-		m_user.ResetInput();
-		break;
-	}
-}
-
 void Game::Logic()
 {
-	// Screen::Buffer_T buffer = m_screen.GetBuffer();
 	char userInput = m_user.GetUserInput();
 	Screen::Buffer_T* buffer = m_screen.GetBuffer();
 
 	switch (userInput)
 	{
 	case 'w':
-		(*buffer)[m_player.GetY()][m_player.GetX()] = ' ';
-		m_player.Update(m_player.GetX(), m_player.GetY() - 1);
-		(*buffer)[m_player.GetY()][m_player.GetX()] = m_player.GetSymbol();
+		m_mapController.ClearPosition(buffer, m_player);
+		m_player.MoveUp();
+		m_mapController.SetPosition(buffer, m_player);
 		m_user.ResetInput();
 		break;
 	case 'a':
-		(*buffer)[m_player.GetY()][m_player.GetX()] = ' ';
-		m_player.Update(m_player.GetX() - 1, m_player.GetY());
-		(*buffer)[m_player.GetY()][m_player.GetX()] = m_player.GetSymbol();
+		m_mapController.ClearPosition(buffer, m_player);
+		m_player.MoveLeft();
+		m_mapController.SetPosition(buffer, m_player);
 		m_user.ResetInput();
 		break;
 	case 's':
-		(*buffer)[m_player.GetY()][m_player.GetX()] = ' ';
-		m_player.Update(m_player.GetX(), m_player.GetY() + 1);
-		(*buffer)[m_player.GetY()][m_player.GetX()] = m_player.GetSymbol();
+		m_mapController.ClearPosition(buffer, m_player);
+		m_player.MoveDown();
+		m_mapController.SetPosition(buffer, m_player);
 		m_user.ResetInput();
 		break;
 	case 'd':
-		(*buffer)[m_player.GetY()][m_player.GetX()] = ' ';
-		m_player.Update(m_player.GetX() + 1, m_player.GetY());
-		(*buffer)[m_player.GetY()][m_player.GetX()] = m_player.GetSymbol();
+		m_mapController.ClearPosition(buffer, m_player);
+		m_player.MoveRight();
+		m_mapController.SetPosition(buffer, m_player);
 		m_user.ResetInput();
 		break;
 	case 't':

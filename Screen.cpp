@@ -3,15 +3,52 @@
 
 Screen::Screen()
 {
-	m_buffer.push_back("***********************************************");
-	m_buffer.push_back("*.............................................*");
-	m_buffer.push_back("*.............................................*");
-	m_buffer.push_back("*.............................................*");
-	m_buffer.push_back("*.............................................*");
-	m_buffer.push_back("*.............................................*");
-	m_buffer.push_back("*.............................................*");
-	m_buffer.push_back("*.............................................*");
-	m_buffer.push_back("***********************************************");
+	m_buffer.push_back("*******************************************************************************************************");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*                                                                                                     *");
+	m_buffer.push_back("*******************************************************************************************************");
 }
 
 
