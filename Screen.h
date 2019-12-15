@@ -17,7 +17,7 @@ public:
 
 public:
 	Buffer_T* GetBuffer() { return &m_buffer; }
-	std::unique_ptr<Buffer_T> GetBuffer_2() { return std::unique_ptr<Buffer_T>(&m_buffer); }
+	
 
 public:
 	void Write();

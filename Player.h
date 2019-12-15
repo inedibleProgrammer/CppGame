@@ -16,7 +16,7 @@ public: // Accessors:
 	void SetX(int x) override { m_x = x; }
 
 	int GetY() const override { return m_y; }
-	void SetY(int y) override { m_x = y; }
+	void SetY(int y) override { m_y = y; }
 
 	char GetSymbol() const override { return m_symbol; }
 	void SetSymbol(char symbol) override { m_symbol = symbol; }

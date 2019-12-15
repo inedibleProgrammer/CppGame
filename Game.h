@@ -1,5 +1,6 @@
 #pragma once
 
+#include "FileManager.h"
 #include "MapController.h"
 #include "Player.h"
 #include "Screen.h"
@@ -8,7 +9,17 @@
 
 class Game
 {
-	bool           m_finished;
+public:
+	enum class GameStates
+	{
+		MainMenu,
+		LoadWorldMap,
+		Running,
+		End,
+	};
+private:
+	FileManager    m_fileManager;
+	GameStates     m_gameState;
 	MapController  m_mapController;
 	Player         m_player;
 	Screen         m_screen;
@@ -19,7 +30,10 @@ public:
 
 public:
 	void Start();
+	void MainMenuControl();
+	void LoadWorldMapControl();
+	void GameRunningControl();
 	void Logic();
 
-public:
+	void PanScreen();
 };
