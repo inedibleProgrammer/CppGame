@@ -60,9 +60,11 @@ void Game::MainMenuControl()
 		break;
 	case '\r': // press enter
 		m_gameState = GameStates::LoadWorldMap;
+		m_user.ResetInput();
 		break;
 	case 't':
 		m_gameState = GameStates::End;
+		m_user.ResetInput();
 		break;
 	default:
 		m_user.ResetInput();
